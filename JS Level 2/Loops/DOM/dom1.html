@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body style="background-color: whitesmoke; color: blue">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+      <div class="day">Friday</div>
+      <div class="day">Saturday</div>
+      <div class="day">Sunday</div>
+    </div>
+  </body>
+  <script>
+    const parent = document.querySelector(".parent"); // to find all elem within parent class
+    //console.log(parent);
+    //console.log(parent.children); // gets HTML Collection
+    //console.log(parent.children[2]);
+    //console.log(parent.children[2].innerHTML);
+
+    //printing all elems
+    for (let i = 0; i < parent.children.length; i++) {
+      //  console.log(parent.children[i].innerHTML);
+    }
+
+    //styling
+    parent.children[1].style.color = "red";
+    parent.children[5].style.color = "red";
+    parent.children[1].style.padding = "10px";
+    parent.children[1].style.backgroundColor = "yellow";
+    parent.children[1].style.fontSize = "52px";
+
+    //interesting properties
+    //console.log(parent.firstElementChild);
+    //console.log(parent.lastElementChild);
+
+    //accessing parent elems
+    const dayOne = document.querySelector(".day");
+    //console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    //access sibiling to first elem as we've used query selector
+    //console.log(dayOne.nextElementSibling);
+
+    // NODES -NODELIST
+    console.log("NODES:", parent.childNodes);
+  </script>
+</html>

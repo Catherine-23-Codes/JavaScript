@@ -1,0 +1,16 @@
+/*
+
+1) Number -> number
+33 -> 33
+
+2) String with number
+"33abc" -> NaN
+Not a number
+
+3) boolean
+true->= 1; false->= 0
+
+4) "" empty string -> false
+
+5) "string value"-> true
+*/

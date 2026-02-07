@@ -1,0 +1,63 @@
+DOM Basics
+DOM = Tree structure of HTML elements
+Each element is an object JavaScript can manipulate
+
+
+🎯 Select Elements
+getElementById() --- Selects one element
+Returns element or null
+document.getElementById("id")
+
+1) querySelector()--Selects only first matching element
+document.querySelector("selector")
+
+2) querySelectorAll()-- Selects all matching elements
+Returns NodeList
+document.querySelectorAll("selector")
+
+
+
+📦 NodeList
+
+Supports:
+.length
+Indexing → [0]
+
+.forEach()
+🆔 Element Properties
+.id → element id
+.className → class value
+.class ❌ invalid
+
+🎨 Style via JS
+
+Format:
+element.style.property = "value"
+
+
+CSS → camelCase
+background-color → backgroundColor
+Values must be strings
+"15px", "red"
+
+📝 Text & HTML
+.innerText → visible text only
+.innerHTML → HTML + text
+
+🔁 Loop Elements
+nodeList.forEach((el) => {
+  el.style.property = "value"
+})
+
+📋 Nested Select
+parent.querySelector("child")
+
+
+Key Rules
+querySelectorAll() → NodeList, not single element
+Inline styles override CSS
+Always use quotes for style values
+
+
+
+reference : https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model

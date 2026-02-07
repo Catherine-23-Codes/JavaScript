@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 2</title>
+  </head>
+  <body style="background-color: rgb(243, 192, 199); color: aquamarine"></body>
+  <script>
+    const div = document.createElement("div");
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    //setting custom attributes
+    div.setAttribute("title", "Hello!!!!");
+    div.style.color = "orange";
+    div.style.backgroundColor = "Red";
+    div.style.padding = "20px";
+    //  div.innerText = "I love JavaScript!";
+
+    //preferred option instead of previous one
+    document.createTextNode("I love JavaScript!");
+    const addText = document.createTextNode("I love JS Coding");
+    div.appendChild(addText);
+
+    //attach all the above to the document
+    document.body.appendChild(div);
+  </script>
+</html>

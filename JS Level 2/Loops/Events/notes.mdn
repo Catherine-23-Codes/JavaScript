@@ -1,0 +1,12 @@
+###JavaScript Notes
+
+JS of Default type: 
+1. Synchronous
+2. Single threaded
+
+Execution context--
+executes one line of a code at a time
+console.log-> line1
+console.log-> line2
+
+Each operation waits for the last one to complete before Execution
